@@ -1,0 +1,355 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  min-height: 100%;
+  line-height: 1.5;
+  font-family: Verdana, sans-serif;
+}
+
+.t-header {
+  gap: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-huz {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.my-logo {
+  font-size: 37px;
+  color: #555555;
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+.deWeb {
+  font-size: 30px;
+  margin: 0;
+  color: #4CAF50;
+}
+
+.welcome {
+  margin-left: 75%;
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  margin: 6px;
+  padding: 4px;
+}
+
+.intro {} */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+  /* Smooth scrolling between sections */
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Styling */
+header {
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 15px 30px;
+  /* Add padding around the navigation */
+  position: fixed;
+  /* Makes the nav fixed at the top */
+  top: 0;
+  width: 100%;
+  /* Ensures the nav spans the full width of the viewport */
+  z-index: 1000;
+  /* Keeps the nav above other content */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  /* Adds a subtle shadow for depth */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Adds space between menu items */
+}
+
+nav ul li {
+  display: inline;
+}
+
+/* Navigation Links Styling */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #f4a261;
+  color: #222;
+  border-radius: 5px;
+}
+
+/* Add spacing below the fixed nav */
+body {
+  padding-top: 70px;
+  /* Offset to prevent content from overlapping with the fixed nav */
+}
+
+
+/* Section Styling */
+section {
+  height: 100vh;
+  /* Each section takes up the full viewport height */
+  display: flex;
+  align-items: center;
+  /* Vertically center content */
+  justify-content: center;
+  /* Horizontally center content */
+  padding: 20px;
+}
+
+/* Home Section */
+#home {
+  background: #f4a261;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Home Container */
+.home-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+  /* Space between left and right sections */
+}
+
+/* Home Section Styling */
+#home {
+  background: #f4a261;
+  color: #fff;
+  height: 100vh;
+  /* Full-screen section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.home-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* Responsive layout */
+}
+
+/* Left Side: Image */
+.home-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side: Text Content */
+.home-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn,
+.btn-alt {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn {
+  background-color: #2a9d8f;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #21867a;
+}
+
+.btn-alt {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-alt:hover {
+  background-color: #fff;
+  color: #f4a261;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+  }
+
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-right {
+    text-align: center;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+
+#about,
+#contact {
+  background: #8e5858;
+}
+
+#projects {
+  background: #2a9d8f;
+  color: #fff;
+}
+
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  /* Use flexbox for layout */
+  flex-direction: column;
+  /* Stack items vertically */
+  align-items: center;
+  /* Center align items */
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  /* Use flexbox for layout */
+  flex-direction: column;
+  /* Stack content vertically */
+  align-items: center;
+  /* Center align items */
+  gap: 10px;
+  /* Space between elements */
+}
+
+footer p {
+  margin: 0;
+  /* Remove default margin */
+  font-size: 0.9rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Keep this for horizontal alignment */
+  gap: 15px;
+  /* Space between links */
+}
+
+
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #f4a261;
+}
