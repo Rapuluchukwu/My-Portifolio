@@ -27,6 +27,7 @@ window.addEventListener('load', () => {
   aboutSection.classList.add('slide-in-right');
 });
 
+
 // Attach event listeners if elements exist
 
 if (hamburger && mobileMenu) {
