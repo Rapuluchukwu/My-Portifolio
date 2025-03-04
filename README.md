@@ -16,7 +16,7 @@ Welcome to my personal portfolio! This project showcases my journey as a front-e
 - **JavaScript:** Interactive components (if applicable).
 
 ## Live Demo
-Check out the live version of my portfolio here: [not yet hosted]
+Check out the live version of my portfolio here: [My first ever portifolio](https://rapuluchukwu.github.io/My-Portifolio/)
 
 ## Contact
 - LinkedIn: [Adibe Theresa R](https://www.linkedin.com/in/adibe-theresa-r)
