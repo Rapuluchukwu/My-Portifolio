@@ -21,25 +21,25 @@
 # Dark Mode Variables
 --------------------------------------------------------------*/
 :root[data-theme="dark"] {
-  --primary-color: #A9F7BD;        /* Opposite of #5f2c82 */
-  --secondary-color: #B64D6F;      /* Opposite of #49a09d */
-  --accent-color: #FF5C5C;         /* Opposite of #25D366 */
-  --text-color: #AAA;              /* Opposite of #555 */
-  --bg-light: rgba(213, 98, 107, 0.1); /* Opposite of rgba(42, 157, 143, 0.1) */
-  --header-bg: rgba(255, 255, 255, 0.1); /* Opposite of rgba(0, 0, 0, 0.1) */
-  --shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+  --primary-color: #E5E6F0;        /* Lighter shade of text color */
+  --secondary-color: #C4C7D8;      /* Slightly darker shade of text color */
+  --accent-color: #A9B0C9;         /* Muted version of text color */
+  --text-color: #E5E6F0;           /* Extracted text color */
+  --bg-light: rgba(229, 230, 240, 0.1); /* Transparent version of text color */
+  --header-bg: rgba(34, 57, 88, 0.1); /* Transparent version of background */
+  --shadow: 0px 4px 10px rgba(229, 230, 240, 0.3);
   /* Footer background inherits header background */
   --footer-bg: var(--header-bg);
-  --footer-link-hover: #0B1F35;     /* Opposite of #f4a261 */
-  --background: #121212;
-  
+  --footer-link-hover: #405A7A;    /* Slightly lighter blue from background */
+  --background: #223958;           /* Extracted background color */
+
   /* Additional Overrides */
-  --border-color: #333;
-  --cursor-bg: rgba(255, 255, 255, 0.4);
-  --hamburger-bg: #FFF;
-  --heading-color: #CCC;
-  --footer-text: #000;
-  --button-shadow: 0px 4px 15px rgba(160, 211, 125, 0.4);
+  --border-color: #2C4566;         /* Darker shade of background */
+  --cursor-bg: rgba(229, 230, 240, 0.4);
+  --hamburger-bg: #E5E6F0;
+  --heading-color: #F5F6FB;        /* Brightest version of text color */
+  --footer-text: #0E1B2D;          /* Darker blue */
+  --button-shadow: 0px 4px 15px rgba(229, 230, 240, 0.4);
 }
 
 /*--------------------------------------------------------------
