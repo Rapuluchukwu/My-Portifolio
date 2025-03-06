@@ -1,3 +1,14 @@
+// Get a reference to the custom cursor element
+const cursor = document.getElementById('customCursor');
+   
+// Listen for mouse movements on the document
+document.addEventListener('mousemove', (e) => {
+  // Set the custom cursor position to match the mouse's x and y coordinates
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
+
 const homeSection = document.getElementById('home');
 const aboutSection = document.getElementById('about');
 
@@ -53,12 +64,3 @@ if (contactForm) {
   });
 }
 
- // Get a reference to the custom cursor element
- const cursor = document.getElementById('customCursor');
-    
- // Listen for mouse movements on the document
- document.addEventListener('mousemove', (e) => {
-   // Set the custom cursor position to match the mouse's x and y coordinates
-   cursor.style.left = e.clientX + 'px';
-   cursor.style.top = e.clientY + 'px';
- });
