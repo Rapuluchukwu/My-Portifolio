@@ -13,7 +13,7 @@ Welcome to my personal portfolio! This project showcases my journey as a front-e
 ## Technologies Used
 - **HTML5:** Structure and content.
 - **CSS3:** Styling, layout, and responsiveness.
-- **JavaScript:** Interactive components (if applicable).
+- **JavaScript:** Interactive components.
 
 ## Live Demo
 Check out the live version of my portfolio here: [My first ever portifolio](https://rapuluchukwu.github.io/My-Portifolio/)
