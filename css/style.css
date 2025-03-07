@@ -1,7 +1,7 @@
 /*CSS Variables (Global Settings)*/
 :root {
   --primary-color: #5f2c82;
-  --text-color: #555;
+  --text-color: #191919;
   --bg-light: rgba(42, 157, 143, 0.1);
   --header-bg: rgba(0, 0, 0, 0.1);
   --shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
